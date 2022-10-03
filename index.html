@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kupa Storem</title>
+</head>
+<body>
+    <main>
+        <header>
+            
+            <nav>
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="./resimler/storem-removebg-preview.png" alt="">
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <a href="#anasayfa">Ana Sayfa</a>
+                            </li>
+                            <li>
+                                <a href="#ürün">Ürünler</a>
+                            </li>
+                            <li>
+                                <a  id="magaza"  href="#">Mağaza</a>
+                            </li>
+                            <li>
+                                <a id="insta" href="#">İnstagram</a>
+                            </li>
+                            <li>
+                                <a href="#hakkımda">Hakkımda</a>
+                            </li>
+                            <li>
+                                <a href="#iletişim" class="active">İletişim</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-content">
+                <div class="container grid-2">
+                    <div class="column-1">
+                        <h1 class="header-tittle">Kupa Storem</h1>
+                        <p class="text">  KupaStorem ile artık istediğin baskılı kupa bardaklara sahip olabilirsin.
+                            ister kendine ister eşine istersende iş yerine ait kupa bardaklar KupaStoremde
+                        </p>
+                        <a href="#ürünler" class="btn">Alışveriş Yap</a>
+                    </div>
+                    <div class="column-2 image">
+                        <img class="resim" src="./resimler/örnek-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="services section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="Neler yapıyoruz">Hizmetlerimiz</h3>
+                    <p class="text1">Basılan kupalar siz değerli müşterilerimize ulaşmadan 
+                        nerelerden geçiyor neler oluyor öğrenelim...
+                    </p>
+                </div>
+                <div class="cards">
+                    <div class="card-wrap">
+                        <div class="card">
+                            <div class="card-content">
+                                <img src="./resimler/art.png" class="icon" alt="">
+                                <h3 class="title-sm">Görseller Tasarlanıyor</h3>
+                                <p class="text2">Kupa bardağınıza bastırmak istediğiniz görseller tasarlanıyor ve ardından basım haline hazır hale getiriliyor
+                                    
+                                </p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrap">
+                        <div class="card">
+                            <div class="card-content">
+                                <img src="./resimler/hot-drink.png" class="icon" alt="">
+                                <h3 class="title-sm">Görseller Kupalara Basılıyor</h3>
+                                <p class="text2"> Basıma uygun görseller yazıcıdan çıkarıldıktan sonra . kupaya yapıştırılıyor ve makineyle beraber basılıp baskıdan çıkartılıyor
+                                   
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrap"><div class="card">
+                        <div class="card-content">
+                            <img src="./resimler/delivery.png" class="icon" alt="">
+                            <h3 class="title-sm">Ve ücretsiz kargo ile teslimat</h3>
+                            <p class="text2">Basılan kupa bardaklar, paketlenip kargoya uygun hale getiriliyor ve daha  sonrasında kargoya veriliyor
+                               
+                            </p>
+                            
+                        </div>
+                    </div></div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="ürünler" class="portfolio section">
+            <div class="background-bg"></div>
+            <div class="container">
+                <div class="section-header">
+                   <h3 id="ürün" class="title" data-title="Örnek Ürünler">Satılık</h3>
+                </div>
+                <div class="row">
+                    <div class="column">
+                      <img src="./resimler/berlin lcdp.jpg" >
+                      <h2>La Casa da Papel Berlin Kupa</h2>
+                      <h4>Fiyat:65 TL (KARGO DAHİL)</h4>
+                      <a href="#berlin" id="berlin" class="button">Satın Al</a>
+                    </div>
+                    <div class="column">
+                      <img src="./resimler/fight club.jpg" >
+                      <h2>Fight Club Poster Baskılı Kupa</h2>
+                      <h4>Fiyat:65 TL (KARGO DAHİL)</h4>
+                      <a href="#fight" id="fight" class="button">Satın Al</a>
+                    </div>
+                    <div class="column">
+                      <img src="./resimler/eş.jpg" >
+                      <h2>Sevgili,Aile,Eş Baskılı Kupalar</h2>
+                      <h4>Fiyat:65 TL (KARGO DAHİL)</h4>
+                      <a href="#aile" id="aile" class="button">Satın Al</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="column">
+                      <img src="./resimler/kurt.jpg" >
+                      <h2>Kurt Baskılı Kupa</h2>
+                      <h4>Fiyat:65 TL (KARGO DAHİL)</h4>
+                      <a href="" class="button">Satın Al</a>
+                    </div>
+                    <div class="column">
+                      <img src="./resimler/yüzük 1.jpg" >
+                      <h2>Yüzüklerin Efendisi Temalı Kupa</h2>
+                      <h4>Fiyat:65 TL (KARGO DAHİL)</h4>
+                      <a href="#yüzük" id="yüzük" class="button">Satın Al</a>
+                    </div>
+                    <div class="column">
+                      <img src="./resimler/yüzk 2.jpg" >
+                      <h2>Yüzüklerin Efendisi Temalı Kupa</h2>
+                      <h4>Fiyat:65 TL (KARGO DAHİL)</h4>
+                      <a href="#lord" id="lord" class="button">Satın Al</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="column">
+                      <img src="./resimler/örnek-1.jpg" >
+                      <h2>İş Yerlerine Logolu Kupa</h2>
+                      <h4>Fiyat:65 TL (KARGO DAHİL)</h4>
+                      <a href="#logo" id="logo" class="button">Satın Al</a>
+                      
+                    </div>
+                    <div class="column">
+                      <img src="./resimler/örnek-3.jpg" >
+                      <h2>Anime Karakterli Kupa</h2>
+                      <h4>Fiyat:65 TL (KARGO DAHİL)</h4>
+                      <a href="#anime" id="anime" class="button">Satın Al</a>
+                    </div>
+                    <div class="column">
+                      <img src="./resimler/JET ÖRNEK.jpg" >
+                      <h2>Valorant Kişiye Özel Kupa</h2>
+                      <h4>Fiyat:65 TL (KARGO DAHİL)</h4>
+                      <a href="#valo" id="valo" class="button">Satın Al</a>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <a class="shop" href="#store" id="store">Daha fazla Ürün İçin online <span style="color: orange;">Mağazamızı</span>  ziyaret et</a>
+        </section>
+    </main>
+    <h2 id="hakkımda" class="about-title">Biz Kimiz</h2>
+    <section class="about">
+        <div class="main">
+            <img  class="about-img" src="./resimler/örnek-2.png" alt="">
+            <div class="about-text">
+                
+                <p> <span style="color: orange;">KupaStorem</span> ,2022 yılının sonlarına doğru <span style="color: orange;">Tunahan Baydar</span> tarafından kurulmuş olan bir kupa basım satım mağazasıdır.Mağazamız şuan
+                    sadece <span style="color: orange;">online</span>  olarak hizmet vermektedir.Şuanlık Mağazada sadece kupa bardak ürünleri bulunmaktadir ve ilerleyen
+                    aylarda satış oranı arttıkça , farklı ürünlerde gelecektir ve bunların başında t-shirt ürünleri yer almaktadır.
+                </p>
+                <button class="about-button">İletişim</button>
+            </div>
+        </div>
+    </section>
+    <section id="iletişim" class="contact">
+        <div class="content">
+            <h2>İletişime Geç</h2>
+            <p>KupaStorem ile iletişime geçerek isterseniz özel görüş ve önerlerinizi bildirebilirsiniz.İster bu gorumdan 
+                iletişime geçiniz isterseniz sosyal medya hesaplarından..
+            </p>
+        </div>
+        <div class="container1">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="texts">
+                        <h3 >Adres</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptatibus quis laborum, sit provident molestias</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-sharp fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="texts">
+                        <h3 >Email</h3>
+                        <p>baybaydar43@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="texts">
+                        <h3 >Telefon</h3>
+                        <p>0541 596 4621</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form >
+                    <h2>İleti Formu</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Ad Soyad</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                       <textarea required="required"></textarea>
+                        <span>Görüş ve Bildiri</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Gönder">
+                       
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+    
+        <ul class="social-icon">
+            <li><a href="#face" id="face"><ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+            <li><a href="#footinsta" id="footinsta" ><ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+            <li><a href="#shopier" id="shopier"><ion-icon name="pricetags-outline"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+        </ul>
+        <ul class="menü">
+            <li><a id="anasayfa" href="">Ana Sayfa</a></li>
+            <li><a href="">Ürünler</a></li>
+            <li><a href="">Mağaza</a></li>
+            <li><a href="">İnstagram</a></li>
+            <li><a href="">Hakkımda</a></li>
+           
+        </ul>
+        <p>Tunahan Baydar / KupaStorem Kişiye özel kupa basım satım mağazası</p>
+    </footer>
+
+
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

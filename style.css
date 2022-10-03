@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&display=swap');
+
+:root{
+    --dark-one:#333;
+    --dark-two: #7a7a7a;
+    --main-color:rgb(255, 208, 0);
+    --light-one: #fff;
+    --light-two:#f9fafb;
+    --light-three: #ffffff;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,button,input,textarea{
+    
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+ 
+h3{
+    color: rgb(39, 39, 39);
+}
+/* header */
+
+header{
+    
+    width: 100%;
+    background-color: var(--light-three);
+    overflow: hidden;
+}
+nav{
+    
+    width: 100%;
+    position: relative;
+    z-index: 50;
+}
+nav .navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    align-items: center;
+}
+.navbar{
+    position: relative;
+    z-index: 5;
+    max-width: 92rem;
+    padding: 0 4rem;
+    margin: 0 auto;
+
+}
+.logo{
+    width: 130px;
+    display: flex;
+    align-items: center;
+}
+.links ul{
+    display: flex;
+}
+.links a{
+    display: inline-block;
+    padding: 0.9rem  1.2rem;
+    color: var(--dark-one);
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    transition: 0.3s;
+}
+.links a.active{
+    background-color: var(--main-color);
+    color: var(--dark-one);
+    border-radius: 2rem;
+    font-size: 1rem;
+    padding: 0.9rem 2.1rem;
+    margin-left: 1rem;
+}
+.links a:hover{
+    color: var(--main-color);
+}
+.links a.active:hover{
+    color: var(--light-one);
+    background-color: var(--main-color);
+}
+
+/* header son */
+.resim{
+    margin-left: 30px;
+    width: 500px;
+}
+.header-tittle{
+
+    line-height: 6rem;
+    color: orange;
+    font-size: 4rem;
+    padding-left: 30px;
+    text-align: center;
+}
+.text{
+    padding-bottom: 40px;
+    font-size: 27px;
+    margin-left: 3rem;
+    
+}
+.btn{
+    
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    background-color: #333;
+    color: #f5f5f3;
+    margin-left: 3rem;
+    border-radius: 2rem;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s;
+}
+.header-content .container.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 6rem);
+    padding-bottom: 2.5rem;
+    text-align: left;
+}
+
+.column-1{
+    margin-right: 1.5rem;
+}
+.column-2{
+    margin-left: 1.5rem;
+}
+.section{
+    padding: 3rem 0;
+}
+/* Servis */
+.section-header{
+    text-align: center;
+    margin-bottom: 1.0rem;
+
+}
+.title{
+    position: relative;
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 1rem;
+    line-height: 1;
+    font-size: 2.8rem;
+    margin-bottom: 0.6rem;
+}
+.title:before{
+content: attr(data-title);
+display: block;
+margin-bottom: 0.5rem;
+color: orange;
+font-size: 1.15rem;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: orange;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.section-header{
+    max-width: 600px;
+    margin: 0 auto ;
+
+}
+.cards{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.card-wrap{
+    margin: 1.7rem 0.8rem;
+}
+.card{
+    max-width: 390px;
+    max-height: 520px;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    overflow: hidden;
+}
+.icon{
+    width: 90px;
+    margin-bottom: 1.7rem;
+}
+.title-sm{
+    color: var(--dark-one);
+    font-weight: 600;
+    font-size: 1.6rem;
+    
+}
+.card .title-sm{
+    line-height: 0.8;
+}
+.card .text2{
+    font-size: 1.15rem;
+    margin: 1.8rem 0;
+}
+.btn .small{
+    width: 50px;
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem ;
+}
+/* Servis son */
+
+/* ürünler */
+.portfolio{
+    position: relative;
+    width: 100%;
+    background-color: var(--light-two);
+    min-height: 1200px;
+}
+.background-bg{
+    position: absolute;
+    width: 1345px;
+    height: 160px;
+    top: 0;
+    left: 0;
+    background-color: orange;
+}
+.portfolio.title,
+.portfolio .title:before{
+    font-size: 2rem;
+    color: var(--light-one);
+}
+.portfolio .title:after{
+    background-color: var(--light-one);
+}
+.filter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+.filter-btn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0.45rem 0.4rem;
+    padding: 0.85rem 1.8rem;
+    color: var(--light-one);
+    text-transform: uppercase;
+    font-weight: bolder ;
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: 0.3s;
+    z-index: 1;
+
+}
+.filter-btn.active{
+    background-color: var(--light-one);
+    color: var(--dark-one);
+}
+.row{
+    margin-left: 100px;
+    margin-right: 40px;
+    margin-top: 70px;
+    display: flex;
+    width: auto;
+}
+.row img{
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    width: 300px;
+}
+.row h2{
+    margin-bottom: 7px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.row h4{
+    margin-bottom: 10px;
+    color: orange;
+    padding-bottom: 7px;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+.button{
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    background-color: #333;
+    margin-top: 50px;
+    margin-left: 100px;
+    list-style: none;
+    text-align: center;
+}
+.button:hover{
+    background-color: orange;
+    color: #f5f5f3;
+    transition: 0.5s;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .shop{
+    
+    margin-left: 430px;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  .magaza{
+   
+    max-width: 1350px;
+    padding-top: 30px;
+    height: 700px;
+  }
+  .social{
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+  .biz{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    background-color: orange;
+  }
+.kupa{
+    width: 550px;
+}
+
+/* ürünler son */
+.about{
+    width: 100%;
+    
+    
+}
+.about-img{
+   
+    width: 500px;
+}
+.about-title{
+    font-size: 40px; 
+    color: #fff;
+    background-color: orange; 
+    text-align: center;
+}
+.about-text{
+    font-weight: bold;
+    font-size: 25px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    font-size: 20px;
+    margin-top: 20px;
+    background: orange;
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    border: 3px solid transparent ;
+    font-weight: bold;
+    padding: 13px 30px;
+    font-weight: bold;
+    border-radius:30px ;
+}
+/* iletişim */
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(./resimler/bg.jpg);
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p{
+    
+    font-weight: 300;
+    color: #fff;
+}
+.container1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container1 .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container1 .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container1 .contactinfo .box .icon{
+    max-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container1 .contactinfo .box .texts{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container1 .contactinfo .box .texts h3{
+    font-weight: 500;
+    color: orange;
+    padding-bottom: 5px;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;    
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: orange;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+
+}
+@media (max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    .container1 .contactinfo{
+        margin-bottom: 40px;
+
+    }
+    .container1 .contactinfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+}
+
+/* iletişim son */
+/* footer */
+
+footer{
+    position: relative;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+footer .social-icon,
+footer .menü{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social-icon li,
+footer .menü{
+    list-style: none;
+
+}
+footer .social-icon li a
+ {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social-icon li a:hover{
+    transform: translateY(-10px);
+}
+footer .menü li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+footer .menü li a:hover{
+    opacity: 1;
+}
+footer p{
+    color: orange;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+/* footer son */
